@@ -20,8 +20,8 @@
     }
     .d1 { animation-delay: 0.2s; }
     .d2 { animation-delay: 0.5s; }
-    .d3 { animation-delay: 0.8s; }
-    .d4 { animation-delay: 0.2s; }
+    .d3 { animation-delay: 1.8s; }
+    .d4 { animation-delay: 1.9s; }
 
     @keyframes fadeIn {
       from { opacity: 0; }
@@ -32,10 +32,10 @@
       opacity: 0;
       animation: fadeIn 0.1s ease forwards;
     }
-    .kw1 { animation-delay: 1.8s; }
-    .kw2 { animation-delay: 2.3s; }
-    .kw3 { animation-delay: 2.8s; }
-    .kw4 { animation-delay: 3.3s; }
+    .kw1 { animation-delay: 1.0s; }
+    .kw2 { animation-delay: 1.4s; }
+    .kw3 { animation-delay: 1.8s; }
+    .kw4 { animation-delay: 1.9s; }
 
     @keyframes wipe {
       from { transform: scaleX(0); }
@@ -51,12 +51,12 @@
     <rect x="0" y="0" width="680" height="320" fill="#0a1628"/>
 
     <!-- rulers -->
-    <line class="fade d1" x1="72"  y1="110" x2="318" y2="110" stroke="#E8C547" stroke-width="0.5" opacity="0.45"/>
-    <line class="fade d4" x1="72"  y1="260" x2="318" y2="260" stroke="#E8C547" stroke-width="0.5" opacity="0.45"/>
+    <line class="fade d1" x1="72"  y1="110" x2="518" y2="110" stroke="#E8C547" stroke-width="0.5" opacity="0.45"/>
+    <line class="fade d4" x1="72"  y1="260" x2="518" y2="260" stroke="#E8C547" stroke-width="0.5" opacity="0.45"/>
 
     <!-- GENKI -->
-    <text class="fade d2"
-      x="195" y="194"
+    <text class="fade d1"
+      x="195" y="210"
       font-family="Helvetica, serif"
       font-size="58" font-weight="500"
       fill="#E8C547"
@@ -65,7 +65,7 @@
 
     <!-- STUDIO -->
     <text class="fade d3"
-      x="195" y="222"
+      x="420" y="232"
       font-family="Helvetica, serif"
       font-size="16" font-weight="300"
       fill="#E8C547"
@@ -74,38 +74,29 @@
 
     <!-- 元 -->
     <g class="kanji-wrap kw1" clip-path="url(#clip1)">
-      <text x="450" y="178"
+      <text x="350" y="190"
         font-family="Georgia, serif"
-        font-size="62" font-weight="700"
-        fill="none" stroke="#E8C547" stroke-width="1.1"
-        text-anchor="middle">元</text>
-    </g>
-
-    <!-- 気 -->
-    <g class="kanji-wrap kw2" clip-path="url(#clip2)">
-      <text x="450" y="248"
-        font-family="Georgia, serif"
-        font-size="62" font-weight="700"
-        fill="none" stroke="#E8C547" stroke-width="1.1"
-        text-anchor="middle">気</text>
-    </g>
-
-    <!-- 工 -->
-    <g class="kanji-wrap kw3" clip-path="url(#clip3)">
-      <text x="378" y="178"
-        font-family="Georgia, serif"
-        font-size="62" font-weight="700"
+        font-size="50" font-weight="700"
         fill="none" stroke="#E8C547" stroke-width="1.1"
         text-anchor="middle">工</text>
     </g>
 
-    <!-- 房 -->
-    <g class="kanji-wrap kw4" clip-path="url(#clip4)">
-      <text x="378" y="248"
+    <!-- 気 -->
+    <g class="kanji-wrap kw2" clip-path="url(#clip2)">
+      <text x="410" y="190"
         font-family="Georgia, serif"
-        font-size="62" font-weight="700"
+        font-size="50" font-weight="700"
         fill="none" stroke="#E8C547" stroke-width="1.1"
-        text-anchor="middle">房</text>
+        text-anchor="middle">作</text>
+    </g>
+
+    <!-- 工 -->
+    <g class="kanji-wrap kw3" clip-path="url(#clip3)">
+      <text x="470" y="190"
+        font-family="Georgia, serif"
+        font-size="50" font-weight="700"
+        fill="none" stroke="#E8C547" stroke-width="1.1"
+        text-anchor="middle">室</text>
     </g>
 
   </svg>
