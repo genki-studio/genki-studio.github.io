@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genki Studio</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0a1628;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .fade {
+      opacity: 0;
+      animation: fadeIn 0.8s ease forwards;
+    }
+    .d1 { animation-delay: 0.2s; }
+    .d2 { animation-delay: 0.5s; }
+    .d3 { animation-delay: 0.8s; }
+    .d4 { animation-delay: 0.2s; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    .kanji-wrap {
+      opacity: 0;
+      animation: fadeIn 0.1s ease forwards;
+    }
+    .kw1 { animation-delay: 1.8s; }
+    .kw2 { animation-delay: 2.3s; }
+    .kw3 { animation-delay: 2.8s; }
+    .kw4 { animation-delay: 3.3s; }
+
+    @keyframes wipe {
+      from { transform: scaleX(0); }
+      to   { transform: scaleX(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <svg width="680" viewBox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+    <title>Genki Studio</title>
+
+    <rect x="0" y="0" width="680" height="320" fill="#0a1628"/>
+
+    <!-- rulers -->
+    <line class="fade d1" x1="72"  y1="110" x2="318" y2="110" stroke="#E8C547" stroke-width="0.5" opacity="0.45"/>
+    <line class="fade d4" x1="72"  y1="260" x2="318" y2="260" stroke="#E8C547" stroke-width="0.5" opacity="0.45"/>
+
+    <!-- GENKI -->
+    <text class="fade d2"
+      x="195" y="194"
+      font-family="Helvetica, serif"
+      font-size="58" font-weight="500"
+      fill="#E8C547"
+      text-anchor="middle"
+      letter-spacing="4">GENKI</text>
+
+    <!-- STUDIO -->
+    <text class="fade d3"
+      x="195" y="222"
+      font-family="Helvetica, serif"
+      font-size="16" font-weight="300"
+      fill="#E8C547"
+      text-anchor="middle"
+      letter-spacing="16">STUDIO</text>
+
+    <!-- 元 -->
+    <g class="kanji-wrap kw1" clip-path="url(#clip1)">
+      <text x="450" y="178"
+        font-family="Georgia, serif"
+        font-size="62" font-weight="700"
+        fill="none" stroke="#E8C547" stroke-width="1.1"
+        text-anchor="middle">元</text>
+    </g>
+
+    <!-- 気 -->
+    <g class="kanji-wrap kw2" clip-path="url(#clip2)">
+      <text x="450" y="248"
+        font-family="Georgia, serif"
+        font-size="62" font-weight="700"
+        fill="none" stroke="#E8C547" stroke-width="1.1"
+        text-anchor="middle">気</text>
+    </g>
+
+    <!-- 工 -->
+    <g class="kanji-wrap kw3" clip-path="url(#clip3)">
+      <text x="378" y="178"
+        font-family="Georgia, serif"
+        font-size="62" font-weight="700"
+        fill="none" stroke="#E8C547" stroke-width="1.1"
+        text-anchor="middle">工</text>
+    </g>
+
+    <!-- 房 -->
+    <g class="kanji-wrap kw4" clip-path="url(#clip4)">
+      <text x="378" y="248"
+        font-family="Georgia, serif"
+        font-size="62" font-weight="700"
+        fill="none" stroke="#E8C547" stroke-width="1.1"
+        text-anchor="middle">房</text>
+    </g>
+
+  </svg>
+
+</body>
+</html>
